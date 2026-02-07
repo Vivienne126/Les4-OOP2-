@@ -45,4 +45,21 @@ if __name__ == '__main__':
             book=input("Enter the namer of the book youwant to lend")
             user=input("Enter your name")
             books.lenbook(user,book)
+        elif userchoice==3:
+            book=input("Enter the namer of the book youwant to ad")
+            books.add_book(book)
+        elif userchoice==4:
+            book=input("Enter the namer of the book youwant to return")
+            books.return_book(book)
+        else:
+            print("Not a valid option")
+        print("Press q to quit or c to continue")
+        userchoice2="" 
+        while(userchoice2!="c" and userchoice2!="q"):
+            userchoice2=input()
+            if userchoice2=="q":
+                exit()
+            elif userchoice2=="c":
+                continue
+
         
